@@ -1,7 +1,7 @@
 ## Сollection of useful nginx configs
 
-0. [Minimal config](0/)
-1. [Static site](1/)
+0. [One static site - minimal config](0/)
+1. [Multiple static pages](1/)
 2. ...
 3. ...
 4. ...
