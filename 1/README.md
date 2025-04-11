@@ -76,7 +76,20 @@ default options which I even needn't to change
 
 ## Case 2
 
-set each site to its own port (with the same one IP)
+One IP - Multiple ports<br>
+Setup the same as for case 1 ([general nginx config](case2/nginx.conf) is also similar) - just add little edits to [site1](case2/sites-available/site-burger.conf) and [site2](case2/sites-available/mysite2)<br>
+
+Now you can open sites:
+* site1: 192.168.1.15:8080
+* site2: 192.168.1.15:8081
+
+If not, set firewall rules to allow traffic. Or ports can be busy
+```
+sudo ufw allow 8080
+sudo ufw allow 8081
+```
+
+this approach isn't an enterprise solution for clients (end users), but it's very useful on production - for internal tools/components, for developers, as part of docker compose or Kubernetes clusters<br>
 
 ----
 
