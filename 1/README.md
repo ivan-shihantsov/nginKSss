@@ -95,6 +95,17 @@ this approach isn't an enterprise solution for clients (end users), but it's ver
 
 ## Case 3
 
+This is the case for pages of on complex web-site or for web-apps to make possible requests from clients to server API<br>
+
+Setup is the same as for case 1 - only replace the ([general nginx config](case3/nginx.conf).<br>
+
+In this case we can make different request path and real files location<br>
+But server must be one for both sites = one common config in sites-available. I did not create it - let's do it in general nginx config<br>
+
+Now you can open your web-sites:
+* http://192.168.100.101/burbur/
+* http://192.168.100.101/stories/
+
 ----
 
 
