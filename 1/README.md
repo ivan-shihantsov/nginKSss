@@ -28,6 +28,8 @@ There are 3 way to serve multiple web-sites on your server:
 
 ## Case 1
 
+![do not forget to update pic when update the scheme file](case1/res/case1.png "case1") <br>
+
 This is a solution for public servers. You need to buy additional IP and possibly it will look like a separate interface
 
 For your project in the LAN you can add one more web-site on the same pc (server) you need to add the 2nd IP on the network interface
@@ -76,6 +78,8 @@ default options which I even needn't to change
 
 ## Case 2
 
+![do not forget to update pic when update the scheme file](case2/res/case2.png "case2") <br>
+
 One IP - Multiple ports<br>
 Setup the same as for case 1 ([general nginx config](case2/nginx.conf) is also similar) - just add little edits to [site1](case2/sites-available/site-burger.conf) and [site2](case2/sites-available/mysite2)<br>
 
@@ -95,7 +99,9 @@ this approach isn't an enterprise solution for clients (end users), but it's ver
 
 ## Case 3
 
-This is the case for pages of on complex web-site or for web-apps to make possible requests from clients to server API<br>
+![do not forget to update pic when update the scheme file](case3/res/case3.png "case3") <br>
+
+This is the case for pages of complex web-site or for web-apps to make possible requests from clients to server API<br>
 
 Setup is the same as for case 1 - only replace the ([general nginx config](case3/nginx.conf).<br>
 
@@ -103,8 +109,8 @@ In this case we can make different request path and real files location<br>
 But server must be one for both sites = one common config in sites-available. I did not create it - let's do it in general nginx config<br>
 
 Now you can open your web-sites:
-* http://192.168.100.101/burbur/
-* http://192.168.100.101/stories/
+* http://192.168.1.15/burbur/
+* http://192.168.1.15/stories/
 
 ----
 

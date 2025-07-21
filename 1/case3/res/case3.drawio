@@ -1,0 +1,54 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="28.0.6">
+  <diagram name="Page-1" id="zWD5SossO-IcpQu0Yz5E">
+    <mxGraphModel dx="1188" dy="633" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="H4DnAHisv9v-qasE2NEJ-1" value="server" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="320" y="80" width="480" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="H4DnAHisv9v-qasE2NEJ-2" value="nginx" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="H4DnAHisv9v-qasE2NEJ-3" value="&lt;span style=&quot;color: rgb(31, 35, 40); font-family: -apple-system, BlinkMacSystemFont, &amp;quot;Segoe UI&amp;quot;, &amp;quot;Noto Sans&amp;quot;, Helvetica, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;; font-size: 16px; text-align: left; background-color: rgb(255, 255, 255);&quot;&gt;ip: 192.168.1.15&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="250" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="H4DnAHisv9v-qasE2NEJ-4" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#000000;strokeWidth=3;" edge="1" parent="1" target="H4DnAHisv9v-qasE2NEJ-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="140" y="280" as="sourcePoint" />
+            <mxPoint x="190" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="H4DnAHisv9v-qasE2NEJ-5" value="port 80" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="H4DnAHisv9v-qasE2NEJ-4">
+          <mxGeometry x="-0.1286" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="H4DnAHisv9v-qasE2NEJ-6" value="" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=3;" edge="1" parent="1" source="H4DnAHisv9v-qasE2NEJ-3" target="H4DnAHisv9v-qasE2NEJ-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="470" y="220" as="sourcePoint" />
+            <mxPoint x="520" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="H4DnAHisv9v-qasE2NEJ-7" value="site1" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#000000;shape=mxgraph.azure.script_file;pointerEvents=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="695" y="120" width="70" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="H4DnAHisv9v-qasE2NEJ-8" value="site2" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#000000;shape=mxgraph.azure.script_file;pointerEvents=1;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="695" y="350" width="70" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="H4DnAHisv9v-qasE2NEJ-9" value="" style="endArrow=none;html=1;rounded=0;entryX=0.04;entryY=0.04;entryDx=0;entryDy=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryPerimeter=0;strokeColor=#3333FF;strokeWidth=3;" edge="1" parent="1" source="H4DnAHisv9v-qasE2NEJ-2" target="H4DnAHisv9v-qasE2NEJ-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="540" y="350" as="sourcePoint" />
+            <mxPoint x="680" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="H4DnAHisv9v-qasE2NEJ-11" value="" style="endArrow=none;html=1;rounded=0;entryX=0.04;entryY=0.96;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryPerimeter=0;strokeColor=#FF3333;strokeWidth=3;" edge="1" parent="1" source="H4DnAHisv9v-qasE2NEJ-2" target="H4DnAHisv9v-qasE2NEJ-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="680" y="290" as="sourcePoint" />
+            <mxPoint x="773" y="339" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

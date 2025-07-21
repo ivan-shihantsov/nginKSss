@@ -28,3 +28,6 @@ sudo systemctl restart nginx
 
 open http://192.168.1.100 in browser and reload several times - it must display different pages (1 and 2) in the random order
 ```
+
+![do not forget to update pic when update the scheme file](res/scheme.png "scheme") <br>
+

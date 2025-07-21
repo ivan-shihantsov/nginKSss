@@ -17,3 +17,6 @@ and now you have the current chain of reqests:<br>
 [your PC] -> [`server3` (192.168.1.22)] -> [`server2` (192.168.1.21)] -> [`main` server (192.168.1.10)] <br>
 
 if you turn off `server2` and make request to `server3` again, you receive `ERR_ADDRESS_UNREACHABLE` "This site can’t be reached"
+
+![do not forget to update pic when update the scheme file](res/scheme.png "scheme") <br>
+
